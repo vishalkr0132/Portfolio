@@ -1,12 +1,4 @@
 @charset "UTF-8";
-
-/*!
- * Bootstrap v5.0.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -376,10 +368,6 @@ select:disabled {
 [type=button],
 [type=reset],
 [type=submit],
-button {
-    -webkit-appearance: button
-}
-
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled),
@@ -438,7 +426,6 @@ legend+* {
 
 [type=search] {
     outline-offset: -2px;
-    -webkit-appearance: textfield
 }
 
 ::-webkit-search-decoration {
@@ -2286,8 +2273,6 @@ textarea.form-control-lg {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact
 }
 
 .form-check-input[type=checkbox] {
@@ -10595,7 +10580,8 @@ fieldset:disabled .btn {
     --disable-color: #d8d6d6;
     --box-shadow-color: rgb(0 0 0 / 10%);
     --border-color: #eee;
-    --bg-layer: rgba(6, 31, 36, 0.9);
+    /* --bg-layer: rgba(6, 31, 36, 0.9); */
+    --bg-layer: rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] {
@@ -10666,7 +10652,6 @@ select,
 label,
 li,
 span {
-    -webkit-appearance: none;
     outline: none;
 }
 
@@ -10959,38 +10944,32 @@ p.white {
 }
 
 .fa-rotate-90 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     -webkit-transform: scale(1, -1);
     transform: scale(1, -1);
 }
 
 .fa-flip-both,
 .fa-flip-horizontal.fa-flip-vertical {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
 }
@@ -19579,34 +19558,31 @@ div.ppt {
 .owl-carousel .owl-stage {
     position: relative;
     touch-action: manipulation;
-    -moz-backface-visibility: hidden;
-}
-
-.owl-carousel .owl-stage:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-
-.owl-carousel .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-
-.owl-carousel .owl-item,
+    /* -moz-backface-visibility: hidden;
+} */
+    .owl-carousel .owl-stage:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    .owl-carousel .owl-stage-outer {
+        position: relative;
+        overflow: hidden;
+        /* -webkit-transform: translate3d(0, 0, 0); */
+    }
+    /* .owl-carousel .owl-item,
 .owl-carousel .owl-wrapper {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
+    /* -webkit-backface-visibility: hidden; */
+    /* -webkit-transform: translate3d(0, 0, 0); */
 }
 
-.owl-carousel .owl-item {
+*/ .owl-carousel .owl-item {
     min-height: 1px;
     float: left;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     -webkit-touch-callout: none;
 }
 
@@ -19744,7 +19720,7 @@ div.ppt {
     background: url(owl.video.play.png) no-repeat;
     cursor: pointer;
     z-index: 1;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     transition: transform .1s ease;
 }
 
@@ -19882,7 +19858,7 @@ div.ppt {
     margin: 5px 1px;
     background: #bcbcbc;
     display: block;
-    -webkit-backface-visibility: visible;
+    /* -webkit-backface-visibility: visible; */
     transition: opacity .2s ease;
     position: relative;
     border-radius: 50%;
@@ -19895,7 +19871,7 @@ div.ppt {
     background: var(--font-color);
     opacity: .5;
     display: block;
-    -webkit-backface-visibility: visible;
+    /* -webkit-backface-visibility: visible; */
     transition: opacity .2s ease;
     position: relative;
     border-radius: 50%;
@@ -20830,7 +20806,7 @@ p.vhny-para {
     z-index: 1043;
     position: fixed;
     outline: none !important;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
 }
 
 .mfp-container {
@@ -20939,7 +20915,7 @@ button.mfp-arrow {
     overflow: visible;
     cursor: pointer;
     border: 0;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     display: block;
     outline: none;
     padding: 0;
@@ -22278,7 +22254,7 @@ span.title {
     width: 100%;
     font-size: 16px;
     color: var(--heading-color);
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     padding: 0px 20px;
     border: 1px solid var(--border-color-light);
     background: var(--bg-grey);
