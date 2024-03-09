@@ -22737,3 +22737,17 @@ pre {
 .w3l-brands {
     background: #397f6a;
 }
+
+
+/* photoslider */
+
+.photoslider {
+    margin-top: 100px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .photoslider {
+        margin-top: 0 !important;
+        height: 100vh !important;
+    }
+}
